@@ -1,0 +1,100 @@
+<!--
+Que. Explain with example the remaining method of string & array.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string & array methods</title>
+</head>
+<body>
+    <h2>string and array methods</h2>
+    <script>
+        //String Methods
+        let text = "  Hay there, i am learning javascript";
+        console.log(text);
+
+        //Finding length of the string
+        console.log(text.length);
+        
+        //Converting string to lower and upper case
+        console.log(text.toUpperCase());
+        console.log(text.toLowerCase());
+
+        //Find element by index number
+        console.log(text[5]);
+
+        //Finding index of character 
+        //first occurence
+        console.log(text.indexOf("t"));
+        //Last occurence
+        console.log(text.lastIndexOf("t"));
+
+        //Find character in a string a by index positon
+        console.log(text.charAt(13));
+
+        //Check if ends with or not
+        console.log(text.endsWith("javascript")); //Returns true/false
+
+        //Converting string to an array
+        console.log(text.split(' ')); 
+
+        //Substrin of a string
+        console.log(text.substring(2,8));
+
+        //Replacing strings
+        console.log(text.replace(" ","*"));
+
+        //Triming whitespace from both side of the string
+        console.log(text.trim())
+//================================================================================
+        //Array methods
+        let arr = ["one",2,"3",["four",5]];
+        console.log(arr);
+
+        //Check if Arrayor not
+        console.log(Array.isArray(arr));//Returns true/false
+
+        //Finding insex number of a given character
+        console.log(arr.indexOf("one"));
+
+        //Reversing the array elements
+        console.log(arr.reverse());
+
+        //Access & replace array element by index number
+        console.log(arr[2]);
+        arr[1] = "skyblue";
+        console.log(arr);
+
+        //Merging(concat) two arrays
+        let arr2 = ["red","Green","Blue"];
+        console.log(arr2);
+        console.log(arr.concat(arr2));
+
+        //Append element in an array
+        //At start
+        arr2.unshift("yellow")
+        console.log(arr2);
+        //At end
+        arr2.push("Voilet");
+        console.log(arr2);
+
+        //Removing elements from an array
+        //From start
+        arr2.shift();
+        console.log(arr2);
+        //From end
+        arr2.pop();
+        console.log(arr2);
+
+        //Removing element from start and end index position
+        arr2.splice(0,1);
+        console.log(arr2);
+
+        
+
+    </script>
+</body>
+</html>
